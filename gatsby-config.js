@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     url: 'https://lumen.netlify.com',
     title: 'Blog by Eric Omanoff',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    subtitle: 'Professional Web Developer in Fort Collins.',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -99,9 +99,7 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 960
-            }
+            options: {maxWidth: 960}
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
@@ -120,10 +118,8 @@ module.exports = {
       options: { trackingId: 'UA-73379983-2' }
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`roboto\:400,400i,500,700`]
-      }
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {fonts: ['roboto\:400,400i,500,700']}
     },
     {
       resolve: 'gatsby-plugin-sitemap',

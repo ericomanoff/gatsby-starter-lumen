@@ -4,10 +4,12 @@ layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+I started out in web development creating websites for businesses, and later moved into custom web apps. Node, React and MySQL are my tools of choice, and I'm very interested in integrating GraphQL in the near future. I like these tools for there speed of development and their thriving ecosystems.
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+Software development is well suited for lifelong learners. I earned a B.S. in Applied Computing Technology at Colorado State University and continue to learn in my own time to expand my skillset. I try to let real world problems I encounter at work guide my topic of study. Some topics I'm likely to dive into in the near future are data intensive design, and golang.
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+![Book](./python1.jpg)
+
+I'm always looking for some good self education material, so let me know if a good book or course impacted you. Some books that have most recently influenced my career are Clean Code and Extreme Ownership.
+
