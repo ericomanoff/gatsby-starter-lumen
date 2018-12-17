@@ -24,15 +24,19 @@ class Sidebar extends React.Component {
             alt={author.name}
           />
         </Link>
-        { isHomePage ? (
+        {isHomePage ? (
           <h1 className="sidebar__author-title">
-            <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
+            <Link className="sidebar__author-title-link" to="/">
+              {author.name}
+            </Link>
           </h1>
-        ) :
+        ) : (
           <h2 className="sidebar__author-title">
-            <Link className="sidebar__author-title-link" to="/">{author.name}</Link>
+            <Link className="sidebar__author-title-link" to="/">
+              {author.name}
+            </Link>
           </h2>
-        }
+        )}
         <p className="sidebar__author-subtitle">{subtitle}</p>
       </div>
     );
@@ -41,15 +45,11 @@ class Sidebar extends React.Component {
     return (
       <div className="sidebar">
         <div className="sidebar__inner">
-          <div className="sidebar__author">
-            {authorBlock}
-          </div>
+          <div className="sidebar__author">{authorBlock}</div>
           <div>
             <Menu data={menu} />
             <Links data={author} />
-            <p className="sidebar__copyright">
-              {copyright}
-            </p>
+            <p className="sidebar__copyright">{copyright}</p>
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@ class Sidebar extends React.Component {
 export default Sidebar;
 
 export const conponentQuery = graphql`
-  fragment sidebarFragment on siteMetadata_2{
+  fragment sidebarFragment on siteMetadata_2 {
     title
     subtitle
     copyright
@@ -71,12 +71,8 @@ export const conponentQuery = graphql`
     author {
       name
       email
-      telegram
       twitter
       github
-      rss
-      vk
     }
   }
 `;
-

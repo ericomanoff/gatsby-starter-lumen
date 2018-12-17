@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://ericomanoff.com',
     title: 'Blog by Eric Omanoff',
     subtitle: 'Professional Web Developer in Fort Collins.',
     copyright: '© All rights reserved.',
@@ -21,12 +21,9 @@ module.exports = {
     ],
     author: {
       name: 'Eric Omanoff',
-      email: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '#',
-      vk: '#'
+      email: 'eric.omanoff@gmail.com',
+      twitter: '@ericomanoff',
+      github: 'ericomanoff'
     }
   },
   plugins: [
@@ -53,7 +50,7 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => (
+            serialize: ({ query: { site, allMarkdownRemark } }) =>
               allMarkdownRemark.edges.map(edge =>
                 Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.frontmatter.description,
@@ -61,8 +58,7 @@ module.exports = {
                   url: site.siteMetadata.site_url + edge.node.fields.slug,
                   guid: site.siteMetadata.site_url + edge.node.fields.slug,
                   custom_elements: [{ 'content:encoded': edge.node.html }]
-                }))
-            ),
+                })),
             query: `
               {
                 allMarkdownRemark(
@@ -99,7 +95,7 @@ module.exports = {
         plugins: [
           {
             resolve: 'gatsby-remark-images',
-            options: {maxWidth: 960}
+            options: { maxWidth: 960 }
           },
           {
             resolve: 'gatsby-remark-responsive-iframe',
@@ -119,7 +115,7 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-google-fonts',
-      options: {fonts: ['roboto\:400,400i,500,700']}
+      options: { fonts: ['roboto:400,400i,500,700'] }
     },
     {
       resolve: 'gatsby-plugin-sitemap',
